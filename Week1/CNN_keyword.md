@@ -37,3 +37,14 @@ Convolution 레이어의 출력 데이터가 줄어드는 것을 방지하는 �
 ### Pooling 레이어
 Convolution Layer의 출력 데이터를 입력으로 받아서 출력 데이터의 크기를 줄이거나 특정 데이터를 강조하는 용도로 사용된다.  
 ex. Max Pooling, Average Pooling, Min Pooling 등
+
+### Sigmoid
+binary classification에 적절한 함수이다. 일정 값을 기준으로 0인지 1인지 구분함으로써 분류하는 방식.
+딥러닝에서는 특정 임계치를 넘을 때만 활성화되기 때문에 activation function 중의 하나로 구분되는 함수
+0 < n < 1 사이의 값만 다루므로 결국 chain rule을 이용해 계속 값을 곱해나간다고 했을 때, 결과 값이 0에 수렴할 수 밖에 없다는 한계를 가지고 있으므로, 나중에는 1보다 작아지지 않게 하기 위한 대안으로 ReLU라는 함수를 적용하게 된다.
+
+### ReLU
+내부 hidden layer를 활성화 시키는 함수로 sigmoid를 사용하지 않고, ReLU라는 활성화 함수를 사용하게 되는데, 이 함수는 0보다 작은 값이 나온 경우 0을 반환하고, 0보다 큰 값이 나온 경우 그 값을
+그대로 반환하는 함수다. 0보다 큰 값일 경우 1을 반환하는 sigmoid와 다르다. 따라서 내부 hidden layer에는 ReLU를 적용하고, 마지막 output layer에서만 sigmoid 함수를 적용하면 이전에 비해 
+정확도가 훨씬 올라가게 된다.
+https://miro.medium.com/max/833/1*nrxtwp6rzqdFhgYh0x-eVw.png
