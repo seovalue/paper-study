@@ -18,13 +18,13 @@ segmentation은  주어진 이미지 내 각 위치의 픽셀들을 하나씩 �
 vggnet(네트워크의 깊이가 좋은 성능에 있어 매우 중요한 요소임을 보여준 모델)을 이용한다. 
 16개의 conv레이어로 이루어지며 모든 컨볼루션은 3x3, 모든 풀링은 2x2만으로 이뤄져 있다.  
 convolution layer - pooling layer - fully convolution layer  
-![feature extraction](./feature-extraction.jpeg)
+![feature extraction](./img/feature-extraction.jpeg)
 
 2) Feature-level Classification
 기존의 fully connected layer를 거치고 나면 class는 분류를 할 수 있으나 위치정보가 사라진다.  
 3차원 데이터에는 공간 정보가 담겨있으나 1차원 벡터로 만들어 값을 넘기기에 공간정보가 사라지게 된다. 
-![feature-level-classfication](./feature-level-classfication.jpeg) 
+![feature-level-classfication](./img/feature-level-classfication.jpeg) 
 따라서, 이 문제를 해결하기 위해 fully connected layer 대신 1x1 conv layer를 추가한다.  
 이 1x1 conv 의 결과물이 class의 feature map의 segmentation이 된다.  
 즉, 위치정보가 사라지는 것이 아니라 남게 되므로 heatmap을 통해서도 확인할 수 있듯 위치에 해당하는 점수가 높게 나오게 된다.
-![heatmap](./heatmap.jpeg)
+![heatmap](./img/heatmap.jpeg)
