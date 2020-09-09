@@ -8,4 +8,4 @@
 * Question keyword 3: `Dimension Reduction: PCA, LDA`  
 
 
-발표 자료는 [Question Keyword](https://www.notion.so/valuecoding/be2252fe79ef4f2f9530ccdbce8c5b69)에서 확인하실 수 있습니다.
+발표 자료 1~3은 [Question Keyword](https://www.notion.so/valuecoding/be2252fe79ef4f2f9530ccdbce8c5b69)에서 확인하실 수 있습니다.
