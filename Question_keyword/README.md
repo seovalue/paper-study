@@ -1,6 +1,6 @@
 # Question Keyword
 
-논문을 읽다가 생긴 Question keyword를 모아둔 notion입니다.  
+논문을 읽다가 생긴 Question keyword를 모아둔 페이지 입니다.  
 
 # 목차
 * Question keyword 1: `Layer`,`pooling`,`convolution`,`relu`,`segmentation`  
