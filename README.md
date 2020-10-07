@@ -4,6 +4,7 @@
 
 | Title         | Author           | Released  |
 | ------------- |:-------------:| -----:|
+| Collaborative Filtering For Implicit Feedback Datasets  | add later | add later |
 | DEEP RESIDUAL LEARNING FOR IMAGE RECOGNITION      | add later | add later |
 | FULLY CONVOLUTIONAL NETWORKS FOR SEMANTIC SEGMENTATION     | add later | add later |
 | GOING DEEPER WITH CONVOLUTIONS | add later | add later |
